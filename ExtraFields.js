@@ -6,7 +6,6 @@ ec.order.extraFields = ec.order.extraFields || {};
 ec.order.extraFields.full_name = {
     'title': 'Full Name',
     'type': 'text',
-    'tip':'Please enter your Full Name',	
     'required': true,
     'checkoutDisplaySection': 'payment_details', // show new field in order comments block
     'orderDetailsDisplaySection': 'order_comments' // show saved data in order comments block in order details to merchant and customer
@@ -23,7 +22,6 @@ ec.order.extraFields.mobile_number = {
     'title': 'Mobile Number',
     'type': 'text',
     'required': true,
-    'tip':'Please enter your Mobile Number',
     'checkoutDisplaySection': 'payment_details', // show new field in order comments block
     'orderDetailsDisplaySection': 'order_comments' // show saved data in order comments block in order details to merchant and customer
 };
