@@ -12,7 +12,7 @@ ec.order.extraFields.full_name = {
 };
 
 // Add new text field to order comments section at checkout
-ec.order.extraFields.mobile_number = {
+ec.order.extraFields.phone_number = {
     'title': 'Phone Number',
     'type': 'text',
     'required': true,
