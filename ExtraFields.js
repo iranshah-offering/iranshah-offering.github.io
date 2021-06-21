@@ -14,12 +14,16 @@ ec.order.extraFields.full_name = {
 
 Ecwid.refreshConfig();
 
+// Initialize order fields 
+ec.order = ec.order || {};
+ec.order.extraFields = ec.order.extraFields || {};
+
 // Add new text field to order comments section at checkout
 ec.order.extraFields.mobile_number = {
-    'title': 'Phone Number',
+    'title': 'Mobile Number',
     'type': 'text',
     'required': true,
-    'tip':'Please enter your Phone Number',
+    'tip':'Please enter your Mobile Number',
     'checkoutDisplaySection': 'payment_details', // show new field in order comments block
     'orderDetailsDisplaySection': 'order_comments' // show saved data in order comments block in order details to merchant and customer
 };
