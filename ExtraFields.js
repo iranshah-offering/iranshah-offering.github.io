@@ -31,12 +31,9 @@ ec.order.extraFields.neft_reference = {
     'orderDetailsDisplaySection': 'order_comments' // show saved data in order comments block in order details to merchant and customer
 };
 
+ec.storefront = ec.storefront || {};
+ec.storefront.product_details_datepicker_options = { 'minDate': Math.round(+new Date()/1000) };
+
 Ecwid.refreshConfig();
 
-Ecwid.OnPageLoaded.add(function(page) {
-    if (page.type == "PRODUCT") && ( (page.productId == '365085293') || (page.productId == '365082735') ) {
-        ec.storefront = ec.storefront || {};
-        ec.storefront.product_details_datepicker_options = { 'minDate': new Date(new Date().getTime() / 1000) };
-        Ecwid.refreshConfig()
-    }
-});
+
