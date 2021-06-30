@@ -32,7 +32,7 @@ ec.order.extraFields.neft_reference = {
 };
 
 ec.storefront = ec.storefront || {};
-ec.storefront.product_details_datepicker_options = {'minDate': new Date(Math.floor(new Date().getTime()))};
+ec.storefront.product_details_datepicker_options = { 'minDate': new Date(new Date().getTime() + 1 * 60 * 60 * 1000) };
 
 Ecwid.refreshConfig();
 
