@@ -32,3 +32,11 @@ ec.order.extraFields.neft_reference = {
 };
 
 Ecwid.refreshConfig();
+
+Ecwid.OnPageLoaded.add(function(page) {
+    if (page.type == "PRODUCT") && ( (page.productId == '365085293') || (page.productId == '365082735') ) {
+        ec.storefront = ec.storefront || {};
+        ec.storefront.product_details_datepicker_options = { 'minDate': new Date(Math.floor(Date.now() / 1000)) };
+        Ecwid.refreshConfig()
+    }
+});
