@@ -32,7 +32,7 @@ ec.order.extraFields.neft_reference = {
 };
 
 ec.storefront = ec.storefront || {};
-ec.storefront.product_details_datepicker_options = { 'minDate': Math.round(+new Date()/1000) };
+ec.storefront.product_details_datepicker_options = { 'minDate': Math.round(+new Date()) };
 
 Ecwid.refreshConfig();
 
