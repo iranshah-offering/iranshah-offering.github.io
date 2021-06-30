@@ -32,8 +32,3 @@ ec.order.extraFields.neft_reference = {
 };
 
 Ecwid.refreshConfig();
-
-Ecwid.OnPageLoaded.add(function(page){
-if((page.type=="PRODUCT") && (page.productId=="365085293" || page.productId=="370109599"))
-$("details-product-purchase__qty").hide();  
-});
