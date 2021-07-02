@@ -8,7 +8,7 @@ ec.order.extraFields.full_name = {
     'type': 'text',
     'required': true,
     'checkoutDisplaySection': 'payment_details', // show new field in order comments block
-    'orderDetailsDisplaySection': 'order_comments' // show saved data in order comments block in order details to merchant and customer
+    'orderDetailsDisplaySection': 'customer_info' // show saved data in order comments block in order details to merchant and customer
 };
 
 // Add new text field to order comments section at checkout
@@ -17,7 +17,7 @@ ec.order.extraFields.phone_number = {
     'type': 'text',
     'required': true,
     'checkoutDisplaySection': 'payment_details', // show new field in order comments block
-    'orderDetailsDisplaySection': 'order_comments' // show saved data in order comments block in order details to merchant and customer
+    'orderDetailsDisplaySection': 'customer_info' // show saved data in order comments block in order details to merchant and customer
 };
 
 // Add new text field to order comments section at checkout
