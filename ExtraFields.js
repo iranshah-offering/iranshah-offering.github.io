@@ -26,7 +26,7 @@ ec.order.extraFields.neft_reference = {
     'type': 'text',
     'required': true,
     'textPlaceholder': 'NEFT Reference Number',
-    'tip':'Please enter the NEFT Reference Number correctly',
+    'tip':'Please mention the NEFT Reference Number correctly',
     'checkoutDisplaySection': 'payment_details', // show new field in order comments block
     'orderDetailsDisplaySection': 'order_comments' // show saved data in order comments block in order details to merchant and customer
 };
