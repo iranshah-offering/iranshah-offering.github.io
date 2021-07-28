@@ -37,7 +37,4 @@ ec.storefront.product_details_datepicker_options = { 'minDate': new Date(new Dat
 
 Ecwid.refreshConfig();
 
-// Set validation message
-document.querySelector("div.ec-form__row.ec-form__row--full_name > div > div.form__msg.form__msg--error").textContent="Please specify your Full Name."
-
 
