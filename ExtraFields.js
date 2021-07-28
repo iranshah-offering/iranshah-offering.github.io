@@ -31,12 +31,13 @@ ec.order.extraFields.neft_reference = {
     'orderDetailsDisplaySection': 'order_comments' // show saved data in order comments block in order details to merchant and customer
 };
 
-// Set the error validation message
-document.querySelector("div.ec-form__row.ec-form__row--full_name > div > div.form__msg.form__msg--error").textContent="Please specify your Full Name."
 // Set the Min Date for the product option datepicker
 ec.storefront = ec.storefront || {};
 ec.storefront.product_details_datepicker_options = { 'minDate': new Date(new Date().getTime() + 1 * 60 * 60 * 1000) };
 
 Ecwid.refreshConfig();
+
+// Set validation message
+document.querySelector("div.ec-form__row.ec-form__row--full_name > div > div.form__msg.form__msg--error").textContent="Please specify your Full Name."
 
 
