@@ -35,10 +35,8 @@ ec.order.extraFields.neft_reference = {
 ec.storefront = ec.storefront || {};
 ec.storefront.product_details_datepicker_options = { 'minDate': new Date(new Date().getTime() + 1 * 60 * 60 * 1000) };
 
+Ecwid.refreshConfig();
+
 Ecwid.OnAPILoaded.add(function() {
     document.querySelector("div.ec-form__row.ec-form__row--full_name > div > div.form__msg.form__msg--error").textContent="Please specify your Full Name.";
 });
-
-Ecwid.refreshConfig();
-
-
