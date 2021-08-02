@@ -21,12 +21,12 @@ ec.order.extraFields.phone_number = {
 };
 
 // Add new text field to order comments section at checkout
-ec.order.extraFields.neft_reference = {
-    'title': 'NEFT Reference Number. Kindly note that your request will be fulfilled only after the realization of the payment.',
+ec.order.extraFields.transaction_reference = {
+    'title': 'Transaction Reference Number. Kindly note that your request will be fulfilled only after the realization of the payment.',
     'type': 'text',
     'required': true,
-    'textPlaceholder': 'NEFT Reference Number',
-    'tip':'Please mention the NEFT Reference Number correctly',
+    'textPlaceholder': 'Transaction Reference Number',
+    'tip':'Please mention the Transaction Reference Number correctly',
     'checkoutDisplaySection': 'payment_details', // show new field in order comments block
     'orderDetailsDisplaySection': 'order_comments' // show saved data in order comments block in order details to merchant and customer
 };
@@ -37,6 +37,6 @@ ec.storefront.product_details_datepicker_options = { 'minDate': new Date(new Dat
 
 Ecwid.refreshConfig();
 
-Ecwid.OnAPILoaded.add(function() {
+Ecwid.OnPageLoaded.add(function() {
     document.querySelector("div.ec-form__row.ec-form__row--full_name > div > div.form__msg.form__msg--error").textContent="Please specify your Full Name.";
 });
